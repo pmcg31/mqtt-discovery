@@ -1,0 +1,11 @@
+[Unit]
+Description=MQTT Discovery
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/mqtt-discovery
+Restart=always
+User=daemon
+
+[Install]
+WantedBy=multi-user.target
